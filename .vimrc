@@ -1,8 +1,14 @@
+" AUTOCOMPLETE & HIGHLIGHTING
+" cd ~/.vim
+" mkdir -p bundle && cd bundle
+" git clone git://github.com/klen/python-mode.git
+
 " pathogen plugin
 " https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
-syntax on
+call pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
+syntax on
 set number
 set ruler
 set cursorline
