@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/civisemployee/.vim'
+let g:netrw_dirhist_2='/Users/civisemployee'
+let g:netrw_dirhist_3='/Users/civisemployee/.oh-my-zsh'
+let g:netrw_dirhist_4='/Users/civisemployee/.vim'
+let g:netrw_dirhist_5='/Users/civisemployee/work/src/survey-modules'
+let g:netrw_dirhist_6='/Users/civisemployee/.vim'
+let g:netrw_dirhist_7='/Users/civisemployee/.vim/bundle'
