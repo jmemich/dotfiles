@@ -34,11 +34,6 @@ set autoindent
 set splitbelow
 set splitright
 
-" navigate between window panes with Ctrl + h
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-
-
 if has("autocmd")
     filetype plugin indent on
 endif
