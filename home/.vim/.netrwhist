@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/civisemployee/work/src/automodeler/asv/benchmarks'
+let g:netrw_dirhist_2='/Users/civisemployee/work/src/automodeler/asv/env/7c1a8318a6b12510fa114bac98a5bef4'
+let g:netrw_dirhist_3='/Users/civisemployee/work/src/automodeler/asv/env/1212559c1b5119e286ba75387b6a68e5/project/automodeler/models'
+let g:netrw_dirhist_4='/Users/civisemployee/work/src/automodeler/asv/benchmarks'
+let g:netrw_dirhist_5='/Users/civisemployee/work/src/automodeler/asv'
+let g:netrw_dirhist_6='/Users/civisemployee/work/src/feature-evaluation/scripts'
+let g:netrw_dirhist_7='/Users/civisemployee/.vim'
+let g:netrw_dirhist_8='/Users/civisemployee/personal/dotfiles'
+let g:netrw_dirhist_9='/Users/civisemployee/personal'
