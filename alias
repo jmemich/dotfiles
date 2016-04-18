@@ -1,0 +1,10 @@
+# aliasing
+alias venv='source activate'
+alias grep='grep --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias pyi="python -i"
+alias ntests="nosetests --with-ignore-docstring -v"
+alias auto80='autopep8 -i --max-line-length=80'
+alias ahead='git rev-list $(git show-ref --verify refs/remotes/upstream/master --hash)..HEAD | wc -l | xargs echo'
+alias evaldock='eval $(docker-machine env)'
