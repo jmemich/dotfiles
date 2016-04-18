@@ -2,9 +2,9 @@ execute pathogen#infect()
 
 " solarized
 " http://ethanschoonover.com/solarized/vim-colors-solarized
-" let g:solarized_termtrans = 1
-" set background=dark
-" colorscheme solarized 
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized 
 
 " tslime.vim
 " https://github.com/jgdavey/tslime.vim
@@ -33,13 +33,6 @@ set autoindent
 
 set splitbelow
 set splitright
-
-" navigate between window panes with Ctrl + h
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-
-let g:sql_type_default = 'pgsql'
-syntax enable
 
 if has("autocmd")
     filetype plugin indent on

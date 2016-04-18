@@ -92,4 +92,4 @@ zstyle ":completion:*:commands" rehash 1
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.alias
-# source ~/.work_profile
+source ~/.work
