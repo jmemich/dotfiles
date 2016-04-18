@@ -1,5 +1,6 @@
 # aliasing
-alias venv='source activate'
+alias workon='source activate'
+alias workoff='source deactivate'
 alias grep='grep --color=auto'
 alias ..='cd ..'
 alias ...='cd ../..'
