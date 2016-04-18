@@ -38,8 +38,6 @@ set splitright
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 
-let g:sql_type_default = 'pgsql'
-syntax enable
 
 if has("autocmd")
     filetype plugin indent on
