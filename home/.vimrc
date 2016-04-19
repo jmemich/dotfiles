@@ -6,6 +6,7 @@ let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized 
 
+" TODO
 " tslime.vim
 " https://github.com/jgdavey/tslime.vim
 
@@ -38,6 +39,7 @@ if has("autocmd")
     filetype plugin indent on
 endif
 
+" TODO get json working
 autocmd Filetype python setlocal ts=4 sts=4 sw=4 et
 autocmd Filetype json setlocal ts=2 sts=2 sw=2 et
 
