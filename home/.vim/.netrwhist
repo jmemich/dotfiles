@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/civisemployee/.homesick/repos/dotfiles/home/.vim'
 let g:netrw_dirhist_2='/Users/civisemployee/work/src/automodeler/asv/env'
+let g:netrw_dirhist_3='/Users/civisemployee/work/src/feature-evaluation/feature_evaluation'
+let g:netrw_dirhist_4='/Users/civisemployee/work/src/feature-evaluation/scripts'
+let g:netrw_dirhist_5='/Users/civisemployee/work/src/political-tools/.hooks'
+let g:netrw_dirhist_6='/Users/civisemployee/work/src/feature-evaluation/scripts'
+let g:netrw_dirhist_7='/Users/civisemployee/.homesick'
+let g:netrw_dirhist_8='/Users/civisemployee'
+let g:netrw_dirhist_9='/Users/civisemployee/.homesick/repos/dotfiles/home/.vim'
