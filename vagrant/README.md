@@ -33,3 +33,7 @@ vagrant destroy # nukes everything, reclaims RAM
 # Pro Tip(s)
 
 Put Vagrant file in `~/` directory so can work with same files from both within VM and on Host.
+
+# Debugging
+
+Check ssh forwarding has been enabled by seeing if your ssh-rsa key is visible with `ssh-add -L`.
