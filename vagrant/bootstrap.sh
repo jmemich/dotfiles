@@ -41,7 +41,7 @@ sudo apt-get update -y && sudo apt-get install -y \
 # conda install
 # move to Vagrantfile so idempotent!
 echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh
-wget --quiet https://repo.continuum.io/miniconda/Miniconda3-3.19.0-Linux-x86_64.sh
-/bin/bash Miniconda3-3.19.0-Linux-x86_64.sh -b -p /opt/conda
-rm Miniconda3-3.19.0-Linux-x86_64.sh
-/opt/conda/bin/conda install --yes conda==3.19.0
+wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.0.5-Linux-x86_64.sh
+/bin/bash Miniconda3-4.0.5-Linux-x86_64.sh -b -p /opt/conda
+rm Miniconda3-4.0.5-Linux-x86_64.sh
+/opt/conda/bin/conda install --yes conda==4.0.5
