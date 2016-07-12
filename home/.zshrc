@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/civisemployee/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -91,5 +91,9 @@ zstyle ":completion:*:commands" rehash 1
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.alias
-source ~/.work
+if [ -f ~/.alias ]; then
+  source ~/.alias
+fi
+if [ -f ~/.work ]; then 
+  source ~/.work
+fi
