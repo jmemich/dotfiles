@@ -10,10 +10,6 @@ let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized 
 
-" TODO
-" tslime.vim
-" https://github.com/jgdavey/tslime.vim
-
 syntax on
 
 set colorcolumn=80
@@ -38,6 +34,8 @@ set autoindent
 
 set splitbelow
 set splitright
+
+set hidden
 
 if has("autocmd")
     filetype plugin indent on

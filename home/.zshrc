@@ -97,3 +97,7 @@ fi
 if [ -f ~/.work ]; then 
   source ~/.work
 fi
+
+# consolo
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
