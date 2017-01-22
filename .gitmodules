@@ -6,4 +6,7 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "home/.vim/bundle/syntastic"]
 	path = home/.vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic
+    url = https://github.com/scrooloose/syntastic
+[submodule "home/.vim/bundle/vim-go"]
+	path = home/.vim/bundle/vim-go
+	url = git://github.com/fatih/vim-go.git
