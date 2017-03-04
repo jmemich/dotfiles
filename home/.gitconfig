@@ -1,0 +1,17 @@
+ # This is Git's per-user configuration file.
+ [core]
+     user = Jamie Michelson
+     email = jmichelson@jmichelson-Civis-MacBook-Air.local
+ [user]
+     name = jmemich
+     email = jmichelson@civisanalytics.com
+ [alias]
+     co = checkout
+     cm = commit -m
+     ri = rebase -i
+     recent = log -n 10 --oneline --graph
+     unfuck = rebase --abort
+ [filter "lfs"]
+     clean = git-lfs clean %f
+     smudge = git-lfs smudge %f
+     required = true
