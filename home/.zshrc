@@ -57,6 +57,8 @@ plugins=(tmux)
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
+export EDITOR=vim
+
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
@@ -87,3 +89,10 @@ fi
 if [ -f ~/.work ]; then 
   source ~/.work
 fi
+
+# conda setup (assumes conda)
+export PATH="$HOME/miniconda3/bin:$PATH"
+
+# setup rbenv (requires `brew install rbenv ruby-build`)
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
