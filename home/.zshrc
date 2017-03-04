@@ -18,7 +18,7 @@ ZSH_THEME="sunaku"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=30
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -40,7 +40,7 @@ ZSH_THEME="sunaku"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -50,21 +50,15 @@ ZSH_THEME="sunaku"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins=(boot2docker)
+plugins=(docker)
+plugins=(tmux)
 
 # User configuration
-
 source $ZSH/oh-my-zsh.sh
 
-
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='vim'
-fi
+export LANG=en_US.UTF-8
 
 # enable colours
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
@@ -86,18 +80,10 @@ zstyle ":completion:*:commands" rehash 1
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 if [ -f ~/.alias ]; then
   source ~/.alias
 fi
+
 if [ -f ~/.work ]; then 
   source ~/.work
 fi
-
-# consolo
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
