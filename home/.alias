@@ -1,15 +1,21 @@
-# aliasing
+# python
 alias workon='source activate'
 alias workoff='source deactivate'
+alias pyi="python -i"
+alias auto80='autopep8 -i --max-line-length=80'
+alias link_nomkl='python -c "from numpy.distutils import system_info; assert system_info.get_info("mkl") == {}"'
+
+# general
 alias grep='grep --color=auto'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias pyi="python -i"
-alias ntests="nosetests --with-ignore-docstring -v"
-alias auto80='autopep8 -i --max-line-length=80'
+
+# git
 alias ahead='git rev-list $(git show-ref --verify refs/remotes/upstream/master --hash)..HEAD | wc -l | xargs echo'
+
+# docker
 alias evaldock='eval $(docker-machine env)'
+alias containerkill="docker ps -a | awk '{print $1}' | tail -n +2 | xargs docker rm --force"
 
 # work
-alias cdm='cd /Users/civisemployee/work/src/go/src/github.com/civisanalytics/go-media'
-
+alias cdm='cd $(echo $GOPATH)/src/github.com/civisanalytics/go-media'
