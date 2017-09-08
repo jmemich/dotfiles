@@ -1,4 +1,5 @@
 # python
+alias l='ls -la'
 alias workon='source activate'
 alias workoff='source deactivate'
 alias pyi="python -i"
