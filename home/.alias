@@ -19,4 +19,7 @@ alias evaldock='eval $(docker-machine env)'
 alias containerkill="docker ps -a | awk '{print $1}' | tail -n +2 | xargs docker rm --force"
 
 # work
-alias cdm='cd $(echo $GOPATH)/src/github.com/civisanalytics/go-media'
+alias cdw='cd /Users/Jamie/git/cmu/spring20'
+
+# sublime (the -f updates it, otherwise -s will fail once its created)
+ln -sf "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
