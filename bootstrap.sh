@@ -25,9 +25,9 @@ elif [[ "$OS" == "Linux" ]]; then
     log "Linux detected — using apt + curl installers"
     if command -v apt-get >/dev/null 2>&1; then
         sudo apt-get update -qq
-        sudo apt-get install -y zsh tmux vim git git-lfs curl
+        sudo apt-get install -y zsh tmux vim python3 git curl
     else
-        warn "apt-get not found — install zsh, tmux, vim, git, git-lfs, curl manually."
+        warn "apt-get not found — install zsh, tmux, vim, python3, git, curl manually."
     fi
     if ! command -v starship >/dev/null 2>&1; then
         log "Installing starship"

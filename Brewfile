@@ -4,9 +4,14 @@
 
 # Terminal
 cask "ghostty"
+brew "tmux"          # multiplexer; needs >=3.3 for allow-passthrough (kitty img protocol)
 
-# Git LFS (referenced in .gitconfig filter section)
-brew "git-lfs"
+# Editor
+brew "vim"           # built with +python3 — required by vim-slime / vim-ipython-cell
+
+# Python — modern interpreter for vim's +python3 and general use.
+# Per-project envs still use uv; this is just the base python3 on PATH.
+brew "python"
 
 # Shell
 brew "starship"     # prompt
