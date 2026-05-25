@@ -1,1 +1,15 @@
-home/.vim/.netrwhist
+# per-machine secrets and overrides
+zsh/local.zsh
+
+# OS noise
+.DS_Store
+*.swp
+*.swo
+
+# editor artifacts
+.idea/
+.vscode/
+
+# vim-plug install artifacts (~/.vim/ symlinks here)
+vim/.vim/autoload/
+vim/.vim/plugged/

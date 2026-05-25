@@ -1,12 +1,3 @@
-[submodule "home/.vim/bundle/vim-slime"]
-	path = home/.vim/bundle/vim-slime
-	url = git://github.com/jpalardy/vim-slime.git
-[submodule "home/.vim/bundle/vim-colors-solarized"]
-	path = home/.vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "home/.vim/bundle/syntastic"]
-	path = home/.vim/bundle/syntastic
-    url = https://github.com/scrooloose/syntastic
-[submodule "home/.vim/bundle/vim-go"]
-	path = home/.vim/bundle/vim-go
-	url = git://github.com/fatih/vim-go.git
+[submodule "agent-configs"]
+	path = agent-configs
+	url = git@github.com:jmemich/agent-configs.git
