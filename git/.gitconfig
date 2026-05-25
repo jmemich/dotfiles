@@ -1,0 +1,25 @@
+[user]
+    name = James Michelson
+    email = 7613058+jmemich@users.noreply.github.com
+
+[core]
+    excludesfile = ~/.config/git/ignore
+
+[init]
+    defaultBranch = main
+
+[push]
+    autoSetupRemote = true
+
+[alias]
+    co = checkout
+    cm = commit -m
+    ri = rebase -i
+    recent = log -n 10 --oneline --graph
+    unfuck = rebase --abort
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

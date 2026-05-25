@@ -1,0 +1,19 @@
+# Ghostty config — managed by ~/dotfiles
+# Reference: https://ghostty.org/docs/config
+
+# Appearance
+theme = Catppuccin Mocha
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 14
+window-padding-x = 12
+window-padding-y = 12
+
+# Behavior
+scrollback-limit = 25000000
+shell-integration = zsh
+clipboard-trim-trailing-spaces = true
+copy-on-select = false
+
+# macOS niceties
+macos-option-as-alt = true
+window-decoration = true
