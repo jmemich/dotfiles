@@ -6,6 +6,7 @@
 " ---------------------------------------------------------------------------
 call plug#begin()
 Plug 'jpalardy/vim-slime'                     " send buffer/selection to tmux REPL
+Plug 'hanschen/vim-ipython-cell'              " Jupyter-style # %% cells on top of slime
 Plug 'christoomey/vim-tmux-navigator'         " seamless Ctrl+hjkl across vim+tmux
 Plug 'dense-analysis/ale'                     " async linting (replaces syntastic)
 Plug 'catppuccin/vim', { 'as': 'catppuccin' } " colorscheme to match Ghostty
@@ -79,6 +80,13 @@ set viminfo^=%
 " vim-slime -> tmux + IPython
 let g:slime_target = "tmux"
 let g:slime_python_ipython = 1
+
+" vim-ipython-cell: Jupyter-style cells delimited by `# %%`
+" (Default delimiter is `# %%`; compatible with VSCode/Cursor/PyCharm/Jupyter.)
+nnoremap <Leader>c :IPythonCellExecuteCell<CR>
+nnoremap <Leader>C :IPythonCellExecuteCellJump<CR>
+nnoremap ]c        :IPythonCellNextCell<CR>
+nnoremap [c        :IPythonCellPrevCell<CR>
 
 " ALE
 let g:ale_linters = {'python': ['flake8'], 'sql': []}
