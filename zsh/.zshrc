@@ -1,4 +1,4 @@
-# Thin entrypoint — symlinked to ~/.zshrc by bootstrap.sh
+# Thin entrypoint — symlinked to ~/.zshrc by setup.sh
 # Real config lives in global.zsh (committed) and local.zsh (per-machine, gitignored).
 
 DOTFILES="${DOTFILES:-$HOME/dotfiles}"

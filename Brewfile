@@ -9,6 +9,9 @@ brew "tmux"          # multiplexer; needs >=3.3 for allow-passthrough (kitty img
 # Editor
 brew "vim"           # built with +python3 — required by vim-slime / vim-ipython-cell
 
+# Markdown
+brew "glow"          # render markdown in the terminal (Charm; pager + TUI file browser)
+
 # Python — modern interpreter for vim's +python3 and general use.
 # Per-project envs still use uv; this is just the base python3 on PATH.
 brew "python"

@@ -6,7 +6,7 @@ Personal macOS / Linux dev environment config. Designed to bootstrap a fresh Mac
 
 ```
 dotfiles/
-├── bootstrap.sh             # one-shot install entry point
+├── setup.sh                 # one-shot install entry point
 ├── Brewfile                 # macOS package list (brew bundle)
 │
 ├── zsh/                     # shell config
@@ -18,17 +18,17 @@ dotfiles/
 └── agent-configs/           # SUBMODULE — AI agent config (Claude, Cursor, shared rules)
 ```
 
-One folder per tool, mirroring the layout the tool expects under `$HOME`. Compatible with `stow` and with the bootstrap script.
+One folder per tool, mirroring the layout the tool expects under `$HOME`. Compatible with `stow` and with the setup script.
 
-## Bootstrap
+## Setup
 
 ```bash
 git clone --recurse-submodules https://github.com/jmemich/dotfiles ~/dotfiles
 cd ~/dotfiles
-./bootstrap.sh
+./setup.sh
 ```
 
-`bootstrap.sh` is idempotent. Safe to re-run.
+`setup.sh` is idempotent. Safe to re-run.
 
 ## Conventions
 

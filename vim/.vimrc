@@ -1,5 +1,5 @@
 " vimrc — managed by ~/dotfiles
-" Plugins via vim-plug. Bootstrap installs vim-plug on first run.
+" Plugins via vim-plug. setup.sh installs vim-plug on first run.
 
 " ---------------------------------------------------------------------------
 " Plugins
@@ -27,6 +27,10 @@ set cursorline
 set showmatch
 set colorcolumn=80
 set pastetoggle=<F2>
+
+" mouse: scroll + select inside vim (tmux forwards wheel events here on the alt screen)
+set mouse=a
+set ttymouse=sgr
 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=

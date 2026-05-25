@@ -20,6 +20,7 @@ autoload -Uz compinit && compinit
 alias l='ls -la'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias md='glow'               # render markdown in the terminal (glow -p to page)
 
 # Starship prompt
 command -v starship >/dev/null && eval "$(starship init zsh)"

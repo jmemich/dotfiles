@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bootstrap: install brew packages and symlink dotfiles into $HOME.
+# Setup: install brew packages and symlink dotfiles into $HOME.
 # Idempotent — safe to re-run. Skips files that aren't ported yet.
 
 set -euo pipefail
@@ -122,4 +122,4 @@ if command -v vim >/dev/null 2>&1 && [[ -f "$DOTFILES/vim/.vimrc" ]]; then
     vim +PlugInstall +qall
 fi
 
-log "Bootstrap complete."
+log "Setup complete."
