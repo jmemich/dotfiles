@@ -82,6 +82,21 @@ link ghostty/config           .config/ghostty/config
 # starship prompt
 link starship/starship.toml   .config/starship.toml
 
+# agent-configs (AI agent skills, submodule)
+# Claude Code reads skills from ~/.claude/skills/<name>/SKILL.md — link the whole dir.
+link agent-configs/skills     .claude/skills
+# Cursor reads slash commands from ~/.cursor/commands/<name>.md — one symlink per skill.
+if [[ -d "$DOTFILES/agent-configs/skills" ]]; then
+    mkdir -p "$HOME/.cursor/commands"
+    for skill in "$DOTFILES/agent-configs/skills"/*/; do
+        name="$(basename "$skill")"
+        if [[ -f "$skill/SKILL.md" ]]; then
+            ln -sfn "$skill/SKILL.md" "$HOME/.cursor/commands/$name.md"
+            log "Linked ~/.cursor/commands/$name.md -> agent-configs/skills/$name/SKILL.md"
+        fi
+    done
+fi
+
 # sublime (macOS only)
 if [[ "$OS" == "Darwin" ]]; then
     SUBLIME_USER="$HOME/Library/Application Support/Sublime Text/Packages/User"

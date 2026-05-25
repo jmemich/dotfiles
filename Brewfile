@@ -13,6 +13,9 @@ brew "vim"           # built with +python3 — required by vim-slime / vim-ipyth
 # Per-project envs still use uv; this is just the base python3 on PATH.
 brew "python"
 
+# Version control
+brew "git"          # current git; macOS ships Apple Git 2.24 — agent-configs /build uses git worktrees
+
 # Shell
 brew "starship"     # prompt
 brew "atuin"        # shell history (Ctrl+R upgrade)
