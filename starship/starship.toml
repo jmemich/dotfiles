@@ -29,8 +29,7 @@ format = "([$all_status$ahead_behind]($style) )"
 
 [python]
 style = "bold yellow"
-symbol = "py "
-format = "[\\($virtualenv\\)]($style) "
+format = "([\\($virtualenv\\)]($style) )"
 
 # ---------------------------------------------------------------------------
 # Catppuccin Mocha palette
