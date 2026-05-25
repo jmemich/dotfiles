@@ -9,3 +9,7 @@ zsh/local.zsh
 # editor artifacts
 .idea/
 .vscode/
+
+# vim-plug install artifacts (~/.vim/ symlinks here)
+vim/.vim/autoload/
+vim/.vim/plugged/

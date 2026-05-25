@@ -93,4 +93,18 @@ if [[ "$OS" == "Darwin" ]]; then
     fi
 fi
 
+# ----------------------------------------------------------------------------
+# vim-plug + plugins
+# ----------------------------------------------------------------------------
+if command -v vim >/dev/null 2>&1 && [[ -f "$DOTFILES/vim/.vimrc" ]]; then
+    VIM_PLUG="$HOME/.vim/autoload/plug.vim"
+    if [[ ! -f "$VIM_PLUG" ]]; then
+        log "Installing vim-plug"
+        curl -fLo "$VIM_PLUG" --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    fi
+    log "Installing vim plugins"
+    vim +PlugInstall +qall
+fi
+
 log "Bootstrap complete."
