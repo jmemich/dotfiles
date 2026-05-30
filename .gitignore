@@ -10,6 +10,5 @@ zsh/local.zsh
 .idea/
 .vscode/
 
-# vim-plug install artifacts (~/.vim/ symlinks here)
-vim/.vim/autoload/
-vim/.vim/plugged/
+# ~/.vim/ symlinks here — entire dir is runtime/install state
+vim/.vim/
